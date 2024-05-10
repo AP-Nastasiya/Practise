@@ -59,12 +59,15 @@ namespace Project {
 			// 
 			// button1
 			// 
+			this->button1->BackColor = System::Drawing::SystemColors::ActiveCaption;
+			this->button1->Font = (gcnew System::Drawing::Font(L"Papyrus", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
 			this->button1->Location = System::Drawing::Point(35, 386);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(317, 94);
 			this->button1->TabIndex = 0;
-			this->button1->Text = L"button1";
-			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Text = L"Скрыть форму";
+			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm1::button1_Click);
 			// 
 			// pictureBox1
@@ -81,11 +84,12 @@ namespace Project {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::SystemColors::GradientActiveCaption;
 			this->ClientSize = System::Drawing::Size(380, 492);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->button1);
 			this->Name = L"MyForm1";
-			this->Text = L"MyForm1";
+			this->Text = L"О программе";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 
